@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/modal.css" />
+    <link rel="stylesheet" href="css/form.css" />
+  </head>
+  <body>
+    <h1 class="header">Работа с CSS на чистом Java Script</h1>
+    <hr />
+
+    <div class="favorite-block"></div>
+    <!--модалка START-->
+    <!--
+    <button class="modal-show" data-modal="#sing-in">Открыть модалку</button>
+    -->
+    <div class="modal-wrap hide" id="sing-in">
+      <!----оболочка модального окна-->
+      <div class="modal">
+        <button class="modal-close round-close" data-modal="#sing-in">+</button>
+        <form class="form" action="" method="">
+          <input
+            name="name"
+            type="text"
+            placeholder="Введите имя"
+            class="input"
+          />
+          <input
+            name="email"
+            type="email"
+            placeholder="Введите E-mail"
+            class="input"
+          />
+          <input
+            name="tel"
+            type="tel"
+            placeholder="Введите телефон"
+            class="input"
+          />
+            <button class="btn-form">Отправить</button>
+        </form>
+        <button class="modal-close" data-modal="#sing-in">Закрыть</button>
+      </div>
+    </div>
+    <!--модалка END-->
+    <div class="block-modal-test">
+      <div class="form-slider">
+        <div class="left-50">
+          <p class="read-rules">Читать правила</p>
+        </div>
+        <div class="right-50">
+            <p class="read-rules-back">Назад</p>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+          corrupti commodi voluptatum architecto sapiente autem vero odio harum
+          consectetur voluptas ipsam ratione, doloribus tempora eaque vitae
+          voluptatem aperiam perferendis sequi.</p>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+            corrupti commodi voluptatum architecto sapiente autem vero odio harum
+            consectetur voluptas ipsam ratione, doloribus tempora eaque vitae
+            voluptatem aperiam perferendis sequi.</p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
+              corrupti commodi voluptatum architecto sapiente autem vero odio harum
+              consectetur voluptas ipsam ratione, doloribus tempora eaque vitae
+              voluptatem aperiam perferendis sequi.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/rules_slider.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
